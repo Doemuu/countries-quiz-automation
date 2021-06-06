@@ -11,3 +11,9 @@ export const OFFISHAL_LOGIN_BTN =
   "#login-modal > div > div.modal-body > div.row.commit-button-row > button";
 
 export const LOGIN_CLOSE = ".modal > div > div.modal-footer > button";
+
+export const QUIZ_START = "#start-button";
+
+export const QUIZ_INPUT = "#txt-answer-box";
+
+export const QUIZ_MAP = "#svg2";
