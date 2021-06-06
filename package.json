@@ -1,8 +1,12 @@
 {
   "name": "puppeter",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
+  "scripts":{
+    "prestart": "tsc",
+    "start": "node ."
+  },
   "dependencies": {
     "puppeteer": "^10.0.0"
   },
