@@ -1,5 +1,4 @@
 import { Page, Touchscreen } from "puppeteer";
-import { SLEEP_TIME } from "../constants";
 import * as Selectors from "../constants/jetpunk-selectors";
 
 export class JetPunkPage {
@@ -21,5 +20,9 @@ export class JetPunkPage {
 
     const offishalLoginBtn = await this.page.$(Selectors.OFFISHAL_LOGIN_BTN);
     await offishalLoginBtn!.click();
+
+    await this.page.waitForSelector(Selectors.LOGIN_CLOSE);
+    const closeBtn = await this.page.$(Selectors.LOGIN_CLOSE);
+    await closeBtn!.click();
   }
 }

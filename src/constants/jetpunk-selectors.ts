@@ -9,3 +9,5 @@ export const LOGIN_PASSWORD =
 
 export const OFFISHAL_LOGIN_BTN =
   "#login-modal > div > div.modal-body > div.row.commit-button-row > button";
+
+export const LOGIN_CLOSE = ".modal > div > div.modal-footer > button";
